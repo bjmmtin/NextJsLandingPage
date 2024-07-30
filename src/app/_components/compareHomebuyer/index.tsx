@@ -1,13 +1,13 @@
 import CompareUint from "./campareUint";
 
-const Compare = () => {
+const CompareHomebuyer = () => {
     return (
-        <div className="lg:px-64 lg:py-8 bg-[url('/img/prefill-cta.svg')]">
-            <div className="text-center font-bold text-5xl text-[#52105b]">
+        <div className="lg:px-64 pb-2 xl:py-10 py-8 bg-bottom bg-no-repeat bg-[url('/assets/img/prefill-cta.svg')] ">
+            <div className="text-center font-bold xl:my-4 xl:text-5xl text-3xl text-[#52105b]">
                 Compare Homebuyer Survey Quotes From Regulated Surveyors
             </div>
             <div className="text-center mb-8 text-2xl text-[#52105b]"> Get started by selecting your property type </div>
-            <div className="flex justify-center  my-6">
+            <div className="flex justify-center  my-8">
                 <CompareUint unitname="FLAT" hrefLink="https://www.comparemymove.com/compare/surveying?propertyType=flat">
                     <svg xmlns="http://www.w3.org/2000/svg" width={48} height={48} viewBox="0 0 73 78">
                         <g fill="none" fill-rule="evenodd">
@@ -105,7 +105,7 @@ const Compare = () => {
                     </svg>
                 </CompareUint>
             </div>
-            <div className="flex justify-center text-lg font-semibold text-[#52105b] xl:grid-cols-2 md:grid-cols-1">
+            <div className="flex justify-center text-xl font-semibold text-[#52105b] xl:grid-cols-2 md:grid-cols-1">
                 <div className="px-4 my-4">   Regulated Property Surveyors    </div>
                 <div className="px-4 my-4">   Used by over 1 million movers in the UK </div>
             </div>
@@ -113,4 +113,4 @@ const Compare = () => {
     );
 }
 
-export default Compare;
+export default CompareHomebuyer;

@@ -5,8 +5,14 @@ import { MoreStories } from "@/app/_components/more-stories";
 import { getAllPosts } from "@/lib/api";
 import Header from "@/app/_components/header";
 import Navbar from "./_components/navbar";
-import Compare from "./_components/compare";
 import MiddleSticky from "./_components/middleSticky";
+import MiddleHeader from "./middleHeader";
+import CharteredSurvey from "./_components/chateredSurvey";
+import CustomerReview from "./_components/customerReview"
+import SurveyingCompanies from "./_components/surveyingCompanies";
+import CompareHomebuyer from "./_components/compareHomebuyer";
+import HomeSurvey from "./_components/homeSurvey";
+import LevelTwoSurvey from "./_components/levelTwosurvey";
 export default function Index() {
   const allPosts = getAllPosts();
 
@@ -18,9 +24,15 @@ export default function Index() {
     <main>
       <Header></Header>
       <Navbar/>
-      <Compare/>
+      <CompareHomebuyer/>
       <MiddleSticky/>
-      <Container>
+      <MiddleHeader/>
+      <CharteredSurvey/>
+      <CustomerReview/>
+      <SurveyingCompanies/>
+      <HomeSurvey/>
+      <LevelTwoSurvey/>
+      {/* <Container>
         <Intro />
         <HeroPost
           title={heroPost.title}
@@ -31,7 +43,7 @@ export default function Index() {
           excerpt={heroPost.excerpt}
         />
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-      </Container>
+      </Container> */}
     </main>
   );
 }
