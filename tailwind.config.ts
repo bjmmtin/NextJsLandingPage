@@ -54,6 +54,23 @@ const config: Config = {
         sm: "0 5px 10px rgba(0, 0, 0, 0.12)",
         md: "0 8px 30px rgba(0, 0, 0, 0.12)",
       },
+      keyframes:{
+        'menuDown':{
+          '0%': {
+            opacity: '.3',
+            top: '-.75rem'
+        },
+    
+        '100%': {
+            opacity:' 1',
+            top: '0'
+        }
+        }
+      },
+      animation:{
+        "menuDown":'menuDown .3s ease-out forwards'
+      }
+
     },
   },
   plugins: [],

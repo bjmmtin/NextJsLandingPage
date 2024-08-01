@@ -1,8 +1,4 @@
-import Container from "@/app/_components/container";
 
-
-import Header from "@/app/_components/header";
-import Navbar from "./_components/navbar";
 import MiddleSticky from "./_components/middleSticky";
 import MiddleHeader from "./_components/middleHeader";
 import CharteredSurvey from "./_components/chateredSurvey";
@@ -17,13 +13,11 @@ import SnaggingSurvey from "./_components/snaggingSurvey";
 import PartyWallSurvey from "./_components/partyWallSurvey";
 import RemovalCompany from "./_components/removalCompany";
 import HelpingStep from "./_components/helpingStep";
-import Footer from "./_components/footer";
+
 export default function Index() {
 
   return (
     <main>
-      <Header></Header>
-      <Navbar/>
       <CompareHomebuyer/>
       <MiddleSticky/>
       <MiddleHeader/>
@@ -38,19 +32,6 @@ export default function Index() {
       <PartyWallSurvey/>
       <RemovalCompany/>
       <HelpingStep/>
-      <Footer/>
-      {/* <Container>
-        <Intro />
-        <HeroPost
-          title={heroPost.title}
-          coverImage={heroPost.coverImage}
-          date={heroPost.date}
-          author={heroPost.author}
-          slug={heroPost.slug}
-          excerpt={heroPost.excerpt}
-        />
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-      </Container> */}
     </main>
   );
 }

@@ -4,7 +4,7 @@ type Props = {
 }
 const Unit = ({ children, name }: Props) => {
     return (
-        <a href="/" className="bg-white rounded-xl px-2 py-4 m-2 w-[calc(24%-0.75rem)] group border-4 flex border-white gap-3 hover:border-[#55a646]" data-btob-type="conveyancing">
+        <a href="/" className="bg-white rounded-xl px-2 py-4 m-2 w-[calc(24%-0.125rem)] group border-4 flex border-white gap-3 hover:border-[#55a646]" data-btob-type="conveyancing">
             <p className="">
                 {children}
             </p>
